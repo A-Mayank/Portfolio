@@ -1,0 +1,59 @@
+.menu {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 10px 5%;
+    width: 100%;
+}
+
+.head {
+    font-family: 'SuperBread-1';
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(26, 24, 24);
+    margin: 0;
+    padding-right: 20px;
+}
+
+.menu ul {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: #4d4747;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #f0a500;
+    text-decoration: underline;
+}
+
+.menu li:active {
+    text-decoration: underline;
+}
+.sqr{
+    border-radius: 10px;
+}
+.sqr-1 {
+    padding: 1%;
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+}
+.sqr-2 {
+    padding: 1%;
+    height: 50vh;
+    width: 35vw;
+}

@@ -1,0 +1,183 @@
+<div>
+    <nav class="menu">
+        <article class="head">MY PORTFOLIO</article>
+        <ul>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">PROJECTS</a></li>
+            <li><a href="#">CONTACT ME</a></li>
+            <li><a href="#">ABOUT ME</a></li>
+            <li><a href="#">HOME</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="row">
+    <h2 class="text-center my-4">🚀 Projects</h2>
+    <div class="card shadow-sm" [ngClass]="{'expanded': project1Expanded}">
+        <i class="fas fa-pills"></i>
+        <div class="card-body">
+            <h5 class="card-title">Healthcare Accessibility App</h5>
+            <p class="card-text" *ngIf="!project1Expanded">Find nearby medical facilities & chat with an AI for symptom analysis.</p>
+            <div *ngIf="project1Expanded"><br>
+                <h4>Project Overview</h4>
+                <p>This project aims to improve access to healthcare by providing users with a seamless platform to locate nearby medical
+                facilities and assess their symptoms through an AI-powered chatbot. The application integrates Google Maps API to
+                pinpoint hospitals, clinics, and pharmacies based on the user's real-time location, ensuring quick and reliable access
+                to healthcare services.</p>
+                
+                <h3>Features</h3>
+                <ul>
+                    <li>Utilizes Google Maps API to fetch and display nearby hospitals, clinics, and pharmacies.</li>
+                    <li>Provides details such as hospital name, address, contact information, and directions.</li>
+                    <li>Features a search function to filter results based on user preferences.</li>
+                </ul>
+
+                <h3>AI-Powered Symptom Assessment Chatbot</h3>
+                <ul>
+                    <li>Built using<strong> NLTK (Natural Language Toolkit)</strong>for Natural Language Processing (NLP).</li>
+                    <li>Allows users to input their symptoms and receive preliminary health insights.</li>
+                    <li>Offers guidance on whether to seek medical attention based on symptom severity.</li>
+                </ul>
+
+                <h3>Technologies Used</h3>
+                <ul>
+                    <li><strong>Backend:</strong> Flask(Pyhton)</li>
+                    <li><strong>Frontend:</strong> HTML, CSS, JavaScript.</li>
+                    <li><strong>AI/NLP:</strong> NLTK(Natural Language Toolkit)</li>
+                    <li><strong>API's Used:</strong> Google Maps API</li>
+                </ul>
+
+                
+            </div>
+            <button class="btn btn-primary" (click)="project1Expanded = !project1Expanded">
+                {{ project1Expanded ? 'Show Less' : 'Read More' }}
+            </button>
+            <div class="buttons">
+                <a href="https://example.com" target="_blank" class="btn btn-success">Live Demo</a>
+                <a href="https://github.com/example" target="_blank" class="btn btn-dark">GitHub</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="card shadow-sm" [ngClass]="{'expanded': project2Expanded}">
+        <i class="fas fa-headset fa-2x"></i>
+        <div class="card-body">
+            <h5 class="card-title">Personal Enquiry Chatbot</h5>
+            <p class="card-text" *ngIf="!project2Expanded">GAIL Chatbot is an AI-powered assistant built for the Smart India Hackathon, using Generative AI and NLP to provide
+            intelligent, context-aware responses.</p>
+            <div *ngIf="project2Expanded"><br>
+                <h4>Project Overview</h4>
+                <p>The GAIL Chatbot was developed as part of the Smart India Hackathon to create an intelligent, AI-powered chatbot capable
+                of assisting users in answering queries, providing recommendations, and automating responses in various domains. The
+                goal was to enhance user engagement, reduce manual intervention, and improve response efficiency using cutting-edge
+                Generative AI and NLP techniques.</p>
+
+                <h3>Key Features:</h3>
+                <ul>
+                    <li>Context-Aware Responses – Understands user intent and provides relevant, conversational replies.</li>
+                    <li>AWS Deployment – Hosted on AWS EC2 & Lambda for fast and scalable performance.</li>
+                    <li>Custom Dataset Training – Fine-tuned using industry-specific data to improve chatbot accuracy.</li>
+                </ul>
+
+                <h3>How It Was Trained:</h3>
+                <ul>
+                    <li>The chatbot was trained using custom datasets relevant to the intended application, ensuring domain-specific accuracy.</li>
+                    <li>Used Natural Language Processing (NLP) models like NLTK and OpenAI's GPT to understand, process, and generate human-like
+                    responses.</li>
+                    <li>Integrated AWS cloud services for scalable training and deployment, allowing real-time interaction without latency
+                    issues.</li>
+                </ul>
+
+                
+
+                <h3>Technologies Used</h3>
+            <ul>
+                <li><strong>Backend:</strong> Python, Flask</li>
+                <li><strong>Deployment:</strong> AWS (EC2, Lambda)</li>
+                <li><strong>AI/NLP:</strong> NLTK, OpenAI GPT</li>
+                <li><strong>API's Used:</strong>Ollama, Huggingface</li>
+                <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+            </ul>
+
+
+            </div>
+            <button class="btn btn-primary" (click)="project2Expanded = !project2Expanded">
+                {{ project2Expanded ? 'Show Less' : 'Read More' }}
+            </button>
+            <div class="buttons">
+                <a href="https://example.com" target="_blank" class="btn btn-success">Live Demo</a>
+                <a href="https://github.com/example" target="_blank" class="btn btn-dark">GitHub</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="card shadow-sm" [ngClass]="{'expanded': project3Expanded}">
+        <i class="fas fa-network-wired fa-2x"></i>
+        <div class="card-body">
+            <h5 class="card-title">De-Anonymization of TOR Network</h5>
+            <p class="card-text" *ngIf="!project3Expanded">Part of my B.Tech Project, focusing on network security and anonymity analysis.</p>
+            <div *ngIf="project3Expanded"><br>
+                <h4>Project Overview</h4>
+                <p>This project analyzes security vulnerabilities in the TOR (The Onion Router) network to reveal potential risks in its
+                anonymity model. It explores traffic analysis, fingerprinting techniques, and exit node monitoring to demonstrate how
+                user identities can be exposed despite TOR’s encryption layers. The research aims to enhance privacy measures and
+                improve anonymity-preserving techniques in online communication.</p>
+
+                <h3>Key Features:</h3>
+                <ul>
+                    <li>To analyze and demonstrate potential vulnerabilities in the TOR network.</li>
+                    <li>To explore traffic analysis, fingerprinting, and exit node monitoring as de-anonymization techniques.</li>
+                    <li>To enhance awareness of privacy risks and suggest improvements in anonymity-preserving methods.</li>
+                </ul>
+
+                <h3>How It Was Trained:</h3>
+                <ul>
+                    <li>The chatbot was trained using custom datasets relevant to the intended application, ensuring
+                        domain-specific accuracy.</li>
+                    <li>Used Natural Language Processing (NLP) models like NLTK and OpenAI's GPT to understand, process,
+                        and generate human-like
+                        responses.</li>
+                    <li>Integrated AWS cloud services for scalable training and deployment, allowing real-time
+                        interaction without latency
+                        issues.</li>
+                </ul>
+
+
+
+                <h3>Technologies Used</h3>
+                <ul>
+                    <li><strong>Python, Wireshark</strong> (for packet analysis)</li>
+                    <li><strong>Machine Learning</strong> (for traffic fingerprinting)</li>
+                    <li><strong>TOR Network</strong> (testing and analysis)</li>
+                </ul>
+
+
+            </div>
+            <button class="btn btn-primary" (click)="project3Expanded = !project3Expanded">
+                {{ project3Expanded ? 'Show Less' : 'Read More' }}
+            </button>
+            <div class="buttons">
+                <a href="https://github.com/example" target="_blank" class="btn btn-dark">GitHub</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="foot">
+        <ul class="social-icons">
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-links-container">
+        <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact Me</a></li>
+            <li><a href="#">Projects</a></li>
+        </ul>
+    </div>
+</footer>

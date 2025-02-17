@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'SuperBread';
+    src: url('/assets/fonts/Doremiademo-rv8ZK.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SuperBread-1';
+    src: url('/assets/fonts/Porkbelly-4n4V9.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

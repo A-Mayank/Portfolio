@@ -1,0 +1,68 @@
+
+<div class="slider">
+    <div class="slider-window">
+        <!-- Slide 1 -->
+        <div class="slide">
+            <div class="overlay"></div>
+            <img class="background-image" src="/assets/texture-1909992.jpg" alt="Background" />
+            <article class="aiz">MY<br>PORTFOLIO</article>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+            <div class="overlay"></div>
+            <img class="background-image" src="assets/image-1200x500.jpg" alt="Image 1" />
+            <article class="aiz" style="
+            font-family: 'SuperBread'; 
+                        z-index: 3;
+                        margin-top: 5%;">
+                Hello,Myself <br>Anmol Mayank
+            </article>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide">
+            <div class="overlay"></div>
+            <img class="background-image" src="assets/IMG_7065.jpg" alt="Image 2" />
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide">
+            <div class="overlay"></div>
+            <img class="background-image" src="assets/IMG_2393.jpg" alt="Image 3" />
+        </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button class="prev" (click)="moveSlide(-1)">&#10094;</button>
+    <button class="next" (click)="moveSlide(1)">&#10095;</button>
+
+    <!-- Navigation Circles -->
+    <div class="navigation-circles">
+        <div *ngFor="let slide of slides; let i = index" class="circle" [class.active]="i === currentIndex"
+            (click)="goToSlide(i)">
+        </div>
+    </div>
+</div>
+
+<!-- Squares Section -->
+<div>
+    <div class="squares">
+        <div class="viz ">
+            <div class="text-overlay " (click)="navigateTo('aboutMe')">ABOUT<br>ME</div>
+            <img src="assets/image_square_1.jpg" alt="Square 1">
+        </div>
+        <div class="viz">
+            <div class="text-overlay" (click)="navigateTo('project')">PROJECTS</div>
+            <img src="assets/image_square_2.png" alt="Square 2">
+        </div>
+        <div class="viz">
+            <div class="text-overlay" (click)="navigateTo('gallery')">GALLERY</div>
+            <img src="assets/image_square_3.jpg" alt="Square 3">
+        </div>
+        <div class="viz">
+            <div class="text-overlay"></div>
+            <img src="assets/image_square_4.jpg" alt="Square 4">
+        </div>
+    </div>
+    
