@@ -2,11 +2,11 @@
     <nav class="menu">
         <article class="head">MY PORTFOLIO</article>
         <ul>
-            <li><a href="#">GALLERY</a></li>
-            <li><a href="#">PROJECTS</a></li>
+            <li><a (click)="navigateTo('gallery')">GALLERY</a></li>
+            <li><a (click)="navigateTo('project')">PROJECTS</a></li>
             <li><a href="#">CONTACT ME</a></li>
-            <li><a href="#">ABOUT ME</a></li>
-            <li><a href="#">HOME</a></li>
+            <li><a (click)="navigateTo('aboutMe')">ABOUT ME</a></li>
+            <li><a (click)="navigateTo('')">HOME</a></li>
         </ul>
     </nav>
 </div>

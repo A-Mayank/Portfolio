@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-gallery',
   standalone: true,
@@ -8,5 +9,8 @@ import { Router } from '@angular/router';
   styleUrl: './gallery.component.css'
 })
 export class GalleryComponent {
-
+  constructor(private router: Router) { }
+  navigateTo(route: string) {
+    this.router.navigate([route]);
+  }
 }

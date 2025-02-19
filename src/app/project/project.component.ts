@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 interface ProjectSection {
   type: "heading" | "paragraph" | "list";
@@ -14,6 +15,10 @@ interface ProjectSection {
 })
 
 export class ProjectComponent {
+  constructor(private router: Router) { }
+    navigateTo(route: string) {
+      this.router.navigate([route]);
+    }
   project1Expanded = false;
   project2Expanded = false;
   project3Expanded = false;

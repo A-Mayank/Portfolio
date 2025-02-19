@@ -2,15 +2,38 @@
     <nav class="menu">
         <article class="head">MY PORTFOLIO</article>
         <ul>
-            <li><a href="#">GALLERY</a></li>
-            <li><a href="#">PROJECTS</a></li>
+            <li><a (click)="navigateTo('gallery')">GALLERY</a></li>
+            <li><a (click)="navigateTo('project')">PROJECTS</a></li>
             <li><a href="#">CONTACT ME</a></li>
-            <li><a href="#">ABOUT ME</a></li>
-            <li><a href="#">HOME</a></li>
+            <li><a (click)="navigateTo('aboutMe')">ABOUT ME</a></li>
+            <li><a (click)="navigateTo('')">HOME</a></li>
         </ul>
     </nav>
 </div>
 <div class="sqr">
 <img class="sqr-1" src="assets/IMG_8396.jpg" alt="image">
-<img class="sqr-2" src="assets/image_square_2.png" alt="image">
+<!--img class="sqr-2" src="assets/image_square_2.png" alt="image">-->
+<img class="sqr-4" src="assets/IMG_7152.JPG" alt="image">
+<img class="sqr-5" src="assets/IMG_7319.jpg" alt="image">
+<img class="sqr-6" src="assets/IMG_4889.JPG" alt="image">
+<img class="sqr-7" src="assets/IMG_0032.jpg" alt="image">
+<img class="sqr-8" src="assets/IMG_7942.jpg" alt="image">
+<img class="sqr-9" src="assets/IMG_4918.JPG" alt="image">
 </div>
+<footer>
+    <div class="foot">
+        <ul class="social-icons">
+            <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-links-container">
+        <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact Me</a></li>
+            <li><a href="#">Projects</a></li>
+        </ul>
+    </div>
+</footer>

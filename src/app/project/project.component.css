@@ -39,6 +39,7 @@
 .menu ul li a:hover {
     color: #f0a500;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .menu li:active {
